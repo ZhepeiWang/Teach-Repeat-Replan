@@ -40,6 +40,8 @@ add_library( poly_utils STATIC
     src/utils/poly_utils.cpp
     third_party/quickhull/QuickHull.cpp )
 
+target_link_libraries(poly_utils ${catkin_LIBRARIES})
+
 add_executable( tr_node 
     src/utils/a_star.cpp
     src/utils/bezier_base.cpp
